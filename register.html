@@ -1,0 +1,30 @@
+<head>
+    <link rel="stylesheet" href="register.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+</head>
+<body>  
+    
+        <from class="container">
+            <h1>Register</h1>
+            <input id="name" class="textbox" type="text" placeholder="First Name">
+            <input id="lastname"class="textbox" type="text" placeholder="Last Name"><br>
+            <input id="old" class="textbox" type="text" placeholder="Age"><br>
+            <input id="sex" class="textbox" type="text" placeholder="Sex"><br>
+            <input id="username" class="textbox" type="text" placeholder="Username"><br>
+            <input id="email" class="textbox" type="text" placeholder="email"><br>
+            <input id="password" class="textbox" type="password" placeholder="Password"><br>
+            <button class = "btn-b1" id="submit" >submit</button>
+            
+            <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script> <!-- เพิ่ม  Library -->
+            <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script><!-- เพิ่ม  Library -->
+            <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script> <!-- เพิ่ม  Library -->
+        
+            <script src="auth_con.js"></script>   <!-- เปิดใช้งานไฟล์ firebaseConfig.js -->
+            <script src="register.js"></script>
+
+
+
+    </body>      
+  
+ 
+</html>
