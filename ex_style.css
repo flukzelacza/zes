@@ -1,20 +1,160 @@
-html, body {
-    background-color: lightgray;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family:arial;
+}
+* a{
+    text-decoration:none;
+}
+* li{
+    list-style:none;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bg::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://4kwallpapers.com/images/wallpapers/workout-limitless-endurance-gym-colorful-smoke-3556x2000-929.jpg');
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(45%);
+}
+.menu{
+    position: relative;
+    width: 85%;
+    height: 15vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a{
+    font-size: 5rem;
+    color: #fff;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+}
+.menu ul li{
+    padding: 0 25px;
+}
+.menu ul li a{
+    font-weight: bold;
+    color: #fff;
+    font-size: 17px;
+}
+/* Content*/
+.content .header{
+    
+    position: absolute; 
+    left: 300px;
+    top: 0px;
+    width: 500px; 
+    padding: 10px;
+    
+}
+.content .header{
+    color: #fff;
+}
+.content .header h3{
+    font-size: 5rem;
+    letter-spacing: 10px;
+    font-family: 'Bebas Neue', cursive;
 }
 
-.mainEx {
-    max-width: 1000px;
-    margin: auto;
+.content .left{
+    position: absolute; 
+    left: 220px;
+    top: 100px;
+    width: 500px; 
+    padding: 10px;
+    
+}
+.content .left{
+    color: #fff;
+}
+.content .left h3{
+    margin: 70px 0;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', cursive;
 }
 
-.box {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    margin: 30px;
+.grid-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    justify-items: auto;
+    column-gap: 0px;
+    row-gap: 25px;
 }
-.image {
-    width: 600px;
-    margin: auto;
+
+.content .grid-card .box{
+    width: 50%;
+    height: 80px;
+    background-position: center;
+    background-size: cover;
+    left: 650px;
+    top: 50px;
+    border-radius: 25px;
+    transition: .4s;
+    position: relative;
+}
+.grid-card .box{
+    position: relative;
+    right: 50px;
+}
+.bg1{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/565/506/328/sports-wallpaper-preview.jpg');
+}
+.bg2{
+    background-image: url('https://img5.goodfon.com/wallpaper/nbig/1/a5/devushka-v-zale-sportivnaia-devushka-zal-gym-kachalka-gantel.jpg');
+}
+.bg4{
+    background-image: url('https://www.eatthis.com/wp-content/uploads/sites/4/2020/01/man-weight-lifting-training-workout-gym.jpg?quality=82&strip=1');
+}
+.bg5{
+    background-image: url('https://wallpaperaccess.com/full/460852.jpg');
+}
+.bg6{
+    background-image: url('https://www.bodybuilding.com/images/2016/june/5-leg-workouts-for-mass-header-v2-960x540.jpg');
+}
+.contai{
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    font-size: 1.7rem;
+    padding: 90px 300px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.content .box h2{
+    position: absolute;
+    bottom: 7px;
+    left: 7px;
+    color: #fff;
+}
+.content .box:hover{
+    transform: translateY(-15px);
+}
+้h7{
+    transform: translate(-800px, 5px);
 }
