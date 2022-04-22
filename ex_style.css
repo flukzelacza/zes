@@ -1,0 +1,20 @@
+html, body {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+.mainEx {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.box {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 30px;
+}
+.image {
+    width: 600px;
+    margin: auto;
+}
