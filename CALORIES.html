@@ -1,0 +1,52 @@
+<head>
+    <link rel="stylesheet" href="CALORIES.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <title>Calories Calculator</title>
+</head>
+<body>  
+
+
+    <div class="wrapper">
+        <div class="input-box button2">
+            <a class="button"href="BMI.html?#">BMI</a>
+        </div>
+        <h2>Calories Calculator</h2>
+        <form action="#">
+          <div class="input-box">
+            <input id="j" type="number" placeholder="Enter Weight" required>
+          </div>
+          <div class="input-box button">
+            <input type="Submit" value="Calculate" onclick="cal(document.getElementById('j').value)">
+          </div>
+        </form>
+        <div class="text">
+            <h3>
+                <p id="x"></p>
+                <p id="a"></p>
+                <p id="c"></p>
+                <p id="y"></p>
+                <p id="r"></p>
+                <p id="cc"></p>
+            </h3>
+        </div>
+   <script>
+    function cal(num1){
+     let ans = (num1)*((31));
+     let res = (num1)*((27));
+     let x = "ชาย"
+     let y = "หญิง"
+     let c = "Calorie"
+     let cc = "Calorie"
+     document.getElementById('a').innerHTML = ans ;
+     document.getElementById('x').innerHTML = x;
+     document.getElementById('c').innerHTML = c;
+     document.getElementById('r').innerHTML = res ;
+     document.getElementById('y').innerHTML = y ;
+     document.getElementById('cc').innerHTML = cc;
+    }
+   </script>
+    </div>
+</body>      
+  
+ 
+</html>
